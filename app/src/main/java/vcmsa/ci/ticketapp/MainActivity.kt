@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
             if (speed == null) {
                 Toast.makeText(this, "You not even driving!", Toast.LENGTH_SHORT).show()
+            } else if (speed == 0 ) {
+                Toast.makeText(this, "You not even driving!", Toast.LENGTH_SHORT).show()
             } else if (speed < 60) {
                 Toast.makeText(this, "You are driving safely!", Toast.LENGTH_SHORT).show()
             } else if (speed <= 80) {
